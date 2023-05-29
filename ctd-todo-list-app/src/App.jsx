@@ -18,7 +18,7 @@ function App() {
     <>
       <h1 className="title">Todo List</h1>
       <ul className="list--items">
-        {todoList.map(item => <li>{item.title}</li>)}
+        {todoList.map(item => <li key={item.id}>{item.title}</li>)}
       </ul>
     </>
   )
